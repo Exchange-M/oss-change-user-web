@@ -1,0 +1,73 @@
+/* #emailCertification #emailCertification .jb-wrap {
+	width: 40%;
+	margin: 10px auto;
+	border: 1px solid #000000;
+	position: relative;
+}
+#emailCertification .jb-wrap img {
+	width: 100%;
+	vertical-align: middle;
+}
+#emailCertification .jb-text {
+	padding: 5px 10px;
+	background-color: yellow;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+} */
+
+#emailCertification .jb-wrap {
+  width: 90%;
+  margin: 60px auto;
+  position: relative;
+}
+#emailCertification .jb-wrap img {
+  width: 100%;
+  vertical-align: middle;
+}
+#emailCertification .jb-text {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+#emailCertification .jb-text-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+#emailCertification .jb-text-table-row {
+  display: table-row;
+}
+#emailCertification .jb-text-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+#emailCertification .jb-text p  {
+  margin: 0px 40px;
+  text-align: center;
+}
+
+#emailCertification button {
+  padding: 10px;
+  background-color: #093687;
+  color: white;
+  cursor: pointer;
+  opacity: 0.7;
+  border: 0px;
+  border-radius: 5px;
+}
+
+#emailCertification button:hover{
+  background-color: white;
+  color: #093687;
+}
+
+@media (min-width: 720px) {
+  #emailCertification .jb-wrap {
+    width: 40%;
+    margin: 60px auto;
+    position: relative;
+  }
+}

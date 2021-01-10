@@ -1,0 +1,17 @@
+#asset .more {
+  display: block
+}
+
+#asset .bottom-pagination {
+  display: none;
+}
+
+@media (min-width: 992px){
+  #asset .more {
+    display: none
+  }
+  
+  #asset .bottom-pagination {
+    display: flex;
+  }
+}

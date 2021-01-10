@@ -1,0 +1,15 @@
+#mypage-verification-center .row {
+  margin-right: 0px !important;
+}
+
+#mypage-verification-center .explain{
+  display: block !important;
+  font-size: 12px;
+}
+
+@media (min-width: 992px) {
+  #mypage-verification-center .explain{
+    display: inline !important;
+    font-size: 16px;
+  }
+}

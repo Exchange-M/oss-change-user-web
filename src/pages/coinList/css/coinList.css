@@ -1,0 +1,8 @@
+#coinList .coins:hover{
+  background-color: #f9fafc;
+
+}
+
+#coinList .coins span.coin-item:hover {
+  text-decoration: underline;
+}

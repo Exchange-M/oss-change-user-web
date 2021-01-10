@@ -1,0 +1,17 @@
+#payment .more {
+  display: block
+}
+
+#payment .bottom-pagination {
+  display: none;
+}
+
+@media (min-width: 992px){
+  #payment .more {
+    display: none
+  }
+  
+  #payment .bottom-pagination {
+    display: flex;
+  }
+}

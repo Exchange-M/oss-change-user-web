@@ -1,0 +1,29 @@
+#coinList{
+  /* position: relative; */
+  width: 100%;
+  min-height: 1px;
+  
+  /* padding-right: 15px; */
+  /* padding-left: 15px; */
+}
+
+.mobile {
+  display: table-row-group;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 992px){
+  #coinList { 
+    padding: 15px
+  }
+  .mobile {
+    display: none;
+  }
+  
+  .desktop {
+    display: table-row-group;
+  }
+}

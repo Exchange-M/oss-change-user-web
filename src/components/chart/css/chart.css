@@ -1,0 +1,7 @@
+
+@media (min-width: 992px){
+  #chart {
+    height: 100%;
+    padding: 0 15px !important;
+  }
+}

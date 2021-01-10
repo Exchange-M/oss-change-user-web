@@ -1,0 +1,10 @@
+#mypage .tab-content {
+  margin: 0px auto;
+}
+
+@media (min-width: 992px){
+  #mypage .tab-content {
+    padding: 20px;
+    margin: 20px auto;
+  }
+}

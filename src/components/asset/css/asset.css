@@ -1,0 +1,29 @@
+#asset-balance .content .m,
+#asset-balance .status .m {
+  display: block;
+}
+#asset-balance .content .d,
+#asset-balance .status .d {
+  display: none;
+}
+
+#asset-balance .content .d {
+  background-color: #fff;
+}
+@media (min-width: 992px) {
+  #asset-balance .content .m,
+  #asset-balance .status .m {
+    display: none;
+  }
+  #asset-balance .content .d,
+  #asset-balance .status .d {
+    display: block;
+  }
+  
+  
+  #asset-balance .item {
+    display: inline-block;
+    width: 33%;
+    padding: 10px;
+  }
+}

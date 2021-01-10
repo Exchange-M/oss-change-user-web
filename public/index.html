@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+   
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+
+    <link rel="stylesheet" media="all" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" media="all" href="/static/css/common.css">
+    <link rel="stylesheet" media="all" href="/static/css/common_m.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="/static/javascripts/popper.min.js"></script>   
+    <script src="/static/javascripts/bootstrap.min.js"></script>
+    <script src="/static/javascripts/jquery.slimscroll.min.js"></script>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!-- traidingview -->
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <title>Mung Exchange</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <script>
+      let isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+  
+      // Firefox 1.0+
+      let isFirefox = typeof InstallTrigger !== 'undefined';
+  
+      // Safari 3.0+ "[object HTMLElementConstructor]" 
+      let isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+  
+      // Internet Explorer 6-11
+      let isIE = /*@cc_on!@*/false || !!document.documentMode;
+  
+      // Edge 20+
+      let isEdge = !isIE && !!window.StyleMedia;
+  
+      // Chrome 1 - 79
+      let isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+  
+      // Edge (based on chromium) detection
+      let isEdgeChromium = isChrome && (navigator.userAgent.indexOf("Edg") != -1);
+  
+      // Blink engine detection
+      let isBlink = (isChrome || isOpera) && !!window.CSS;
+  
+      let output = 'Detecting browsers by ducktyping: \n';
+      output += 'isFirefox: ' + isFirefox + '\n';
+      output += 'isChrome: ' + isChrome + '\n';
+      output += 'isSafari: ' + isSafari + '\n';
+      output += 'isOpera: ' + isOpera + '\n';
+      output += 'isIE: ' + isIE + '\n';
+      output += 'isEdge: ' + isEdge + '\n';
+      output += 'isEdgeChromium: ' + isEdgeChromium + '\n';
+      output += 'isBlink: ' + isBlink + '\n'; 
+  
+      console.log(output)
+      
+      if(isIE) {
+        alert('Chrome 또는 Edge 접속을 권장합니다.')
+      }
+    </script>
+  </body>
+</html>

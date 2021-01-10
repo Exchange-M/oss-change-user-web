@@ -1,0 +1,435 @@
+
+#orderbook .askpriceC {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid white;
+}
+
+#orderbook .askPriceC .scrollB {
+  height: 572px;
+  padding-bottom: 36px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/*  ===== 판매호가 ===== */
+#orderbook .askpriceC .SellHoga {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+
+#orderbook .askpriceC ul.askprice.Type02 {
+  width: 66.66%;
+  float: left;
+}
+#orderbook .askpriceC ul.Hogaprice {
+  width: 33.33%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#orderbook .askpriceC ul.askprice.Type02 li {
+  float: left;
+  width: 100%;
+}
+#orderbook .askpriceC ul.askprice.Type02 li.downB a {
+  /* background-color: #eef6ff; */
+  border-right: 1px solid #eef6ff;
+  border-bottom: 1px solid #eef6ff;
+}
+#orderbook .askpriceC ul.askprice.Type02 li a {
+  display: table;
+  width: 100%;
+  border-top: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+#orderbook .askpriceC ul.askprice.Type02 li a span.bar {
+  position: relative;
+  display: table-cell;
+  width: 50%;
+  height: 30px;
+  padding: 1px 0 0 4px;
+  border-right: 1px solid #fff;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#orderbook .askpriceC ul.askprice.Type02 li.downB a span.bar div.tick {
+  background-color: #cde0f6;
+}
+#orderbook .askpriceC ul.askprice.Type02 li a span.bar div.tick {
+  height: 18px;
+  overflow: hidden;
+  /* text-indent: -999em; */
+  float: right;
+}
+
+#orderbook .askpriceC ul.askprice.Type02 li a span.bar span.num {
+  position: absolute;
+  top: 0px;
+  right: 4px;
+  display: table;
+  height: 30px;
+  box-sizing: border-box;
+}
+#orderbook .askpriceC ul.askprice.Type02 li a span.bar {
+  position: relative;
+  display: table-cell;
+  width: 50%;
+  height: 30px;
+  padding: 1px 0 0 4px;
+  border-right: 1px solid #fff;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#orderbook .askpriceC ul.askprice.Type02 li a span.bar span.num p {
+  display: table-cell;
+  width: 100%;
+  padding-right: 4px;
+  padding-top: 6px;
+  line-height: 16px;
+  color: #333;
+  font-size: 12px;
+  word-break: break-all;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+/*  ===== 구매호가 ===== */
+#orderbook .askpriceC .BuyHoga {
+  position: relative;
+}
+
+#orderbook .askpriceC ul.HogaAccept {
+  width: 33.33%;
+  float: left;
+}
+
+#orderbook .askpriceC ul.HogaAccept li.header {
+  margin-top: 5px;
+}
+
+#orderbook .askpriceC ul.HogaAccept li {
+  font-size: 12px;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+#orderbook .askpriceC ul.HogaAccept li.headerlabel {
+  padding: 4px;
+}
+#orderbook .askpriceC ul.HogaAccept li.headerlabel .labelL {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+  font-weight: 700;
+}
+#orderbook .askpriceC ul.HogaAccept li.headerlabel .labelR {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+  text-align: right;
+  font-weight: 700;
+}
+#orderbook .askpriceC ul.HogaAccept li.list {
+  padding: 5px;
+}
+#orderbook .askpriceC ul.HogaAccept li.list .labelL {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+  font-weight: 300;
+}
+#orderbook .askpriceC ul.HogaAccept li.list .labelR {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+  text-align: right;
+  font-weight: 400;
+}
+
+#orderbook .askpriceC ul.HogaAccept li:after {
+  content: "";
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+
+#orderbook .askpriceC ul.askprice.Type01 {
+  width: 66.66%;
+  float: left;
+}
+
+#orderbook .askpriceC .SellHoga:after,
+#orderbook .askpriceC .BuyHoga:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+#orderbook .askpriceC .BuyHoga:after{
+  height: 30px;
+}
+
+
+#orderbook .askpriceC ul.HogaAccept li.header .label, 
+#orderbook .askpriceC ul.HogaAccept li.header .txt {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+  font-weight: 700;
+}
+
+#orderbook .askpriceC ul.HogaAccept li.header .txt {
+  text-align: right;
+}
+
+#orderbook .askpriceC ul.askprice.Type01 li {
+  float: left;
+  width: 100%;
+}
+
+#orderbook .askpriceC ul.askprice.Type01 li.upB a {
+  /* background-color: #fff0ef; */
+  border-right: 1px solid #fff0ef;
+  border-bottom: 1px solid #fff0ef;
+}
+#orderbook .askpriceC ul.askprice.Type01 li:first-child a {
+  border-top: 0;
+}
+#orderbook .askpriceC ul.askprice.Type01 li a {
+  display: table;
+  width: 100%;
+  border-top: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+#orderbook .askpriceC ul.askprice.Type02 li a span.order,
+#orderbook .askpriceC ul.askprice.Type01 li a span.order{
+  position: relative;
+  display: table-cell;
+  width: 50%;
+  height: 35px;
+  padding: 1px 15px 0 0;
+  text-align: right;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+#orderbook .askpriceC ul.askprice.Type02 li a span.order {
+  /* background-color: #eef6ff; */
+  background-color: #eef6ff;
+}
+#orderbook .askpriceC ul.askprice.Type01 li a span.order {
+  background-color: #fff0ef;
+}
+
+#orderbook .askpriceC ul.askprice.Type02 li a span.order strong,
+#orderbook .askpriceC ul.askprice.Type01 li a span.order strong {
+  line-height: 1.1em;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#orderbook .askpriceC ul.askprice.Type02 li a span.order i, 
+#orderbook .askpriceC ul.askprice.Type01 li a span.order i {
+  font-size: 11px;
+  padding-left: 15px;
+}
+
+#orderbook .askpriceC ul.askprice.Type01 li a span.bar {
+  position: relative;
+  display: table-cell;
+  width: 50%;
+  height: 30px;
+  padding: 1px 4px 0 0;
+  border-left: 1px solid #fff;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#orderbook .askpriceC ul.askprice.Type01 li.upB a span.bar div.tick,
+#orderbook .askpriceC ul.askprice.Type01 li.upB a span.bar div.tick {
+  background-color: #f8d8d6;
+}
+#orderbook .askpriceC ul.askprice.Type01 li a span.bar div.tick,
+#orderbook .askpriceC ul.askprice.Type01 li a span.bar div.tick {
+  height: 18px;
+  overflow: hidden;
+  text-indent: -999em;
+  float: left;
+}
+
+#orderbook .askpriceC ul.askprice.Type01 li a span.bar span.num {
+  position: absolute;
+  left: 4px;
+  display: table;
+  /* height: 34px; */
+  box-sizing: border-box;
+}
+
+
+
+
+/* =========== 하단 총합 =============== */
+
+#orderbook .askpriceC table.total {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+}
+
+#orderbook .askpriceC table.total td:first-child {
+  border-left: 0 solid #fff;
+}
+#orderbook .askpriceC table.total td {
+  height: 35px;
+  border-left: 1px solid #fff;
+}
+
+#orderbook .askpriceC table.total td:first-child {
+  border-left: 0 solid #fff;
+}
+
+#orderbook .askpriceC table.total .box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #edeff4;
+}
+#orderbook .askpriceC table.total .box.side p {
+  padding: 10px 5px 0;
+}
+#orderbook .askpriceC table.total .box.center p, 
+#orderbook .askpriceC table.total .box p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 16px;
+  color: #333;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#orderbook .askpriceC table.total .box p {
+  padding: 5px 23px 0;
+  font-size: 14px;
+}
+
+#orderbook .askpriceC div.Select {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 35px;
+  background-color: #edeff4;
+  font-size: 14px;
+  text-align: center;
+}
+
+#orderbook .askpriceC div.Select .SelectBt {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  text-align: center;
+  font-size: 14px;
+  background: transparent url(https://cdn.upbit.com/images/HogaSelectArrow.ac3c610.png) no-repeat 100% 100%;
+  background-size: 12px;
+}
+
+/* ======= 거래량, 최고/최저, 고가/저가 */
+#orderbook .askpriceC ul.Hogaprice li {
+  font-size: 11px;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+#orderbook .askpriceC ul.Hogaprice li .box {
+  border-bottom: 1px solid #eee;
+  padding: 5px 0;
+}
+#orderbook .askpriceC ul.Hogaprice li.list03 .box p.disc span,
+#orderbook .askpriceC ul.Hogaprice li.list02 .box p.disc span,
+#orderbook .askpriceC ul.Hogaprice li.list01 .box p.disc span {
+  color: #999;
+  text-align: right;
+  width: 100%;
+  display: block;
+}
+#orderbook .askpriceC ul.Hogaprice li.list02 .box p.info span.price,
+#orderbook .askpriceC ul.Hogaprice li.list03 .box p.info span.price,
+#orderbook .askpriceC ul.Hogaprice li.list01 .box p.info span.price {
+  float: right;
+}
+
+/* ======= 공통 ======= */
+#orderbook .rAlign {
+  text-align: right!important;
+}
+#orderbook .lAlign {
+  text-align: left!important;
+}
+
+#orderbook i {
+  font-style: normal;
+  font-weight: 400;
+}
+
+#orderbook table, td, th {
+  border-collapse: collapse;
+}
+#orderbook table {
+  table-layout: fixed;
+  border-spacing: 0;
+}
+
+.askprice.Type02 > li .bar:hover,
+.askprice.Type02 > li .order:hover,
+.askprice.Type01 > li .bar:hover,
+.askprice.Type01 > li .order:hover {
+  cursor: pointer;
+}
+
+.sell-hover:hover{
+  background-color: rgb(205, 224, 246);
+}
+.buy-hover:hover{
+  background-color: rgb(248, 216, 214);/* background: rgba(9, 54, 135 0.4); */
+}
+
+
+@media(min-width: 992px) {
+  #orderbook .askpriceC table.total {
+    position: relative;
+  }
+  #orderbook .askpriceC .BuyHoga:after{
+    height: 0px;
+  }
+
+  #orderbook {
+    display: inline-block;
+    width: 60%;
+    padding:15px;
+  }
+  #orderbook .askpriceC .scrollB {
+    height: 516px;
+    scroll-snap-align: center;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  #orderbook table.total{
+    position: fixed;
+  }
+}

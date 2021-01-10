@@ -1,0 +1,14 @@
+#guide .title2 {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#guide ul {
+  padding: 20px;
+}
+
+#guide ul li {
+  list-style-type: circle;
+  line-height: 24px;
+}

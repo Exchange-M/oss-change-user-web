@@ -1,0 +1,21 @@
+#complex-order {
+  background: #fff;
+}
+
+#complex-order .quotes-table td{
+  width: 50%;
+}
+
+@media (min-width: 992px) {
+  #normal-order {
+    height: 581px;
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    padding: 15px;
+  }
+
+  #normal-order .container{
+    height: 100%;
+  }
+}
