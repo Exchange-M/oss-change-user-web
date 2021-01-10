@@ -1,5 +1,7 @@
 # 거래소 프론트 - 사용자
 
+[거래소 문서](https://github.com/Exchange-M/oss-exchange-document.git)
+
 ## 설정파일
 
 * **`.env`**
