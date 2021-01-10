@@ -43,6 +43,12 @@ REACT_APP_PRODUCTION_MODE=production
 
 .env에 명시한 정보로 연결한다.
 
+## install
+
+```sh
+$ npm run install
+```
+
 ## start 
 
 ```sh
